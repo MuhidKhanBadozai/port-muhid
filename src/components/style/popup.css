@@ -1,0 +1,37 @@
+.popup {
+    position: fixed;
+    background-color: red;
+    border-radius: 15px;
+    width: 400px; /* Only fit the first .img width */
+    height: 200px;
+    transition: transform 0.3s ease;
+    transform: scale(0);
+    pointer-events: none;
+    z-index: 9999; /* Ensure it's on top of everything */
+    overflow: hidden; /* Hide overflow of other .img elements */
+}
+
+.img {
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Smooth transition on transform */
+    position: absolute; /* Position absolute to allow stacking */
+}
+
+.img:nth-child(1) {
+    background-color: black;
+}
+
+.img:nth-child(2) {
+    background-color: grey;
+}
+
+.img:nth-child(3) {
+    background-color: red;
+}
+
+.img:nth-child(4) {
+    background-color: green;
+}

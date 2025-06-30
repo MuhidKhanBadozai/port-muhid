@@ -1,0 +1,65 @@
+.page {
+    position: relative;
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.page::before,
+.page::after {
+    content: "";
+    position: absolute;
+    width: 200%; /* Increased width for a smoother radial gradient */
+    height: 200%; /* Increased height for a smoother radial gradient */
+    filter: blur(150px); /* Increased blur for a more subtle effect */
+    z-index: -1; /* Ensure it stays in the background */
+}
+
+/* Adjust positioning for before */
+.page::before {
+    left: 25%; /* Bring it into view */
+    top: 30%; /* Adjust top positioning */
+    background: radial-gradient(circle, #fa8dec, #fff 60%);
+}
+
+/* Adjust positioning for after */
+.page::after {
+    right: 25%; /* Bring it into view */
+    top: 30%; /* Adjust top positioning */
+    background: radial-gradient(circle, #bbe9ff, #fff 60%);
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.btnc {
+    border: 2px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 30px;
+    width: 102px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    flex-direction: row;
+}
+
+.btnc span {
+    margin-left: 10px;
+}
+
+.phoneicon, .linkdinicon {
+    width: 35px;
+    height: 35px;
+}
+
+.fa-envelope{
+    scale: 170%;
+}

@@ -1,0 +1,30 @@
+#projectPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 242, 4); /* Dim background to simulate a new page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it's on top of all other content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: circle(0% at 50% 50%); /* Default circle at center */
+    overflow: hidden;
+}
+
+.closeBtn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* .desc{
+    display: flex;
+    flex-direction: row;
+} */
+
+

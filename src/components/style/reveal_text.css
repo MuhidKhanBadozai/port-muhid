@@ -1,0 +1,119 @@
+/* main page */
+
+.reveal-cont{
+    /* background-color: white; */
+    width: 100%;
+    min-height: 100vh; /* Allow for content growth */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Khula', sans-serif;
+    z-index: 2; /* Ensure it's above */
+    position: relative;
+    margin-top: 0; /* Remove any top margin */
+    scroll-behavior: smooth;
+}
+
+/* main Cont */
+
+.info-cont{
+    max-width: 1000px;
+}
+
+/* heading Cont */
+
+.heading h1{
+    margin-top: -30px;
+    font-size: 60px;
+    line-height: 1.2;
+    will-change: auto;
+}
+
+/* line break Cont */
+
+.line-break{
+    margin-top: 80px;
+}
+
+.line-break p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.line-break hr{
+    margin-top: -10px;
+}
+
+/* name-btn Cont */
+
+.name-btn{
+    max-width:500px;
+}
+
+.intro{
+    margin-top: 60px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 45px;
+}
+
+.name-btn button{
+    margin-top: 100px;
+    width: 160px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: black;
+    opacity: 1;
+    color: white;
+}
+
+.icon-arrow{
+    rotate: -40deg;
+}
+
+/* desc Cont */
+
+.desc{
+    max-width: 400px;
+}
+@media (max-width: 1200px){
+    /* Scale down text */
+    .heading h1 {
+        font-size: 2.75rem;
+        padding: 50px;
+    }
+    .about{
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+}
+@media (max-width: 768px) {
+    .desc{
+        max-width: 1000px;
+    }
+    .heading h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width:480px){
+    .heading h1 {
+        font-size: 1.75rem;
+        line-height: 2rem;
+    }
+}
+
+@media (max-width:440px){
+    .nav-cont{
+        scale:60%;
+    }
+}
