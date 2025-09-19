@@ -158,7 +158,7 @@ function SelectedProj() {
       {isMouseDevice ? (
         // 🖱 Mouse-based layout (Hover effects enabled)
         <div className='project-cont' ref={projectContRef}>
-          {['Sahulat-Hub', 'Weather App', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
+          {['Sahulat-Hub', 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
             <div className='proj69' ref={(el) => (projectRefs.current[index] = el)} key={index}>
               <div className='project' onClick={(e) => showProjectScreen(title, e)}>
                 <div className='project-name'>
@@ -177,7 +177,7 @@ function SelectedProj() {
         // 📱 Touch-based layout (No hover effects)
         <div className=''>
           <div className='grid grid-cols-2 grid-flow-row max-sm:grid-cols-1 gap-6 gap-y-32 px-4' ref={projectContRef}>
-            {['Sahulat-Hub', 'Weather App', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
+            {['Sahulat-Hub', 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
               <div className='w-80 max-sm:w-[80vw] flex flex-col gap-y-4 items-center' key={index}>
                 <div className="w-80 aspect-[77/44] max-sm:w-[80vw] bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${getImage(title)})` }}></div>
                 <h1 className='khula-regular text-4xl mt-8'>{title}</h1>
@@ -226,6 +226,8 @@ function getCategory(title) {
       return 'React-Native/FireBase';
     case 'Weather App':
       return 'Kotlin / RestApi';
+    case 'Digital Invoice System':
+      return 'React / JavaScript';
     case 'Hotel Management':
       return 'React / MERN';
     case 'Portfolio':
@@ -262,6 +264,7 @@ import hotelMgmtImg from '../assets/hotel-managment.png';
 import portImg from '../assets/port.png';
 import pricePredImg from '../assets/pricepredection.png';
 import uniqueArtImg from '../assets/uniqueart.png';
+import digitalInvoiceImg from '../assets/InvoiceSys.png';
 
 // ...existing code...
 
@@ -271,6 +274,8 @@ function getImage(title) {
       return sahulatHubImg;
     case 'Weather App':
       return weatherAppImg;
+    case 'Digital Invoice System':
+      return digitalInvoiceImg;
     case 'Hotel Management':
       return hotelMgmtImg;
     case 'Portfolio':
