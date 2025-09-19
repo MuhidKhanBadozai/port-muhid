@@ -158,7 +158,7 @@ function SelectedProj() {
       {isMouseDevice ? (
         // 🖱 Mouse-based layout (Hover effects enabled)
         <div className='project-cont' ref={projectContRef}>
-          {['Sahulat-Hub', 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
+          {[ 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
             <div className='proj69' ref={(el) => (projectRefs.current[index] = el)} key={index}>
               <div className='project' onClick={(e) => showProjectScreen(title, e)}>
                 <div className='project-name'>
@@ -177,7 +177,7 @@ function SelectedProj() {
         // 📱 Touch-based layout (No hover effects)
         <div className=''>
           <div className='grid grid-cols-2 grid-flow-row max-sm:grid-cols-1 gap-6 gap-y-32 px-4' ref={projectContRef}>
-            {['Sahulat-Hub', 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
+            {[ 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
               <div className='w-80 max-sm:w-[80vw] flex flex-col gap-y-4 items-center' key={index}>
                 <div className="w-80 aspect-[77/44] max-sm:w-[80vw] bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${getImage(title)})` }}></div>
                 <h1 className='khula-regular text-4xl mt-8'>{title}</h1>
@@ -222,8 +222,8 @@ function SelectedProj() {
 // }
 function getCategory(title) {
   switch (title) {
-    case 'Sahulat-Hub':
-      return 'React-Native/FireBase';
+    // case 'Sahulat-Hub':
+    //   return 'React-Native/FireBase';
     case 'Weather App':
       return 'Kotlin / RestApi';
     case 'Digital Invoice System':
@@ -270,8 +270,8 @@ import digitalInvoiceImg from '../assets/InvoiceSys.png';
 
 function getImage(title) {
   switch (title) {
-    case 'Sahulat-Hub':
-      return sahulatHubImg;
+    // case 'Sahulat-Hub':
+    //   return sahulatHubImg;
     case 'Weather App':
       return weatherAppImg;
     case 'Digital Invoice System':
