@@ -4,9 +4,9 @@ import './style/popup.css';
 const Popup = forwardRef(({ imgRefs }, ref) => {
   return (
     <div className='popup' ref={ref}>
-      {/* <div className="img" ref={imgRefs[0]}>
+      <div className="img" ref={imgRefs[0]}>
         <img src="./assets/sahulat-hub.png" height={200} width={400} alt="Image 1" />
-      </div> */}
+      </div>
       <div className="img" ref={imgRefs[1]}>
         <img src="./assets/weatherapp.png" height={200} width={400} alt="Image 2" />
       </div>
