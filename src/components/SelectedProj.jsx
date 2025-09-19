@@ -16,7 +16,7 @@ function SelectedProj() {
   const projectScreenRef = useRef(null);
   const popupRef = useRef(null);
   const projectContRef = useRef(null);
-  const imgRefs = [useRef(null), useRef(null), useRef(null), useRef(null),useRef(null),useRef(null)];
+  const imgRefs = [useRef(null), useRef(null), useRef(null), useRef(null),useRef(null),useRef(null),useRef(null)];
   const projectRefs = useRef([]);
   const mousePos = useRef({ x: 900, y: 500 });
   const speed = 0.1;
@@ -177,7 +177,7 @@ function SelectedProj() {
         // 📱 Touch-based layout (No hover effects)
         <div className=''>
           <div className='grid grid-cols-2 grid-flow-row max-sm:grid-cols-1 gap-6 gap-y-32 px-4' ref={projectContRef}>
-            {['Sahulat-Hub', 'Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
+            {['Sahulat-Hub','Weather App','Digital Invoice System', 'Hotel Management', 'Portfolio','House Price Prediction System','Unique Art Generator'].map((title, index) => (
               <div className='w-80 max-sm:w-[80vw] flex flex-col gap-y-4 items-center' key={index}>
                 <div className="w-80 aspect-[77/44] max-sm:w-[80vw] bg-cover bg-center rounded-xl" style={{ backgroundImage: `url(${getImage(title)})` }}></div>
                 <h1 className='khula-regular text-4xl mt-8'>{title}</h1>
